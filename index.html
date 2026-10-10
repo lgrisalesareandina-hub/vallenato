@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <meta name="description" content="58° Festival de la Leyenda Vallenata en Valledupar: el encuentro folclórico más grande de Colombia. Entrada 100% gratuita a concursos, piloneras y conciertos.">
+  <title>Festival de la Leyenda Vallenata · Valledupar | Entrada Libre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Barra Superior de Anuncio de Festival -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <span class="top-bar__tag">Edición 58</span>
+      <p class="top-bar__text">✨ <strong>Valledupar, Cesar</strong> · La Fiesta del Folclor Vallenato · 26 al 30 de Abril</p>
+      <span class="top-bar__free-pill">🎉 Entrada 100% Libre y Gratuita a Todos los Escenarios</span>
+    </div>
+  </div>
+
+  <!-- Encabezado Principal -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo" aria-label="Festival de la Leyenda Vallenata">
+        <span class="logo__emblem">
+          <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="6" y="10" width="12" height="44" rx="4" fill="currentColor"/>
+            <rect x="46" y="10" width="12" height="44" rx="4" fill="currentColor"/>
+            <path d="M18 14h4v36h-4zM24 16h3v32h-3zM29 18h3v28h-3zM34 18h3v28h-3zM39 16h3v32h-3zM44 14h2v36h-2z" fill="currentColor" opacity=".85"/>
+            <circle cx="12" cy="22" r="2.2" fill="#ffffff"/>
+            <circle cx="12" cy="32" r="2.2" fill="#ffffff"/>
+            <circle cx="12" cy="42" r="2.2" fill="#ffffff"/>
+            <circle cx="52" cy="22" r="2.2" fill="#ffffff"/>
+            <circle cx="52" cy="32" r="2.2" fill="#ffffff"/>
+            <circle cx="52" cy="42" r="2.2" fill="#ffffff"/>
+          </svg>
+        </span>
+        <span class="logo__text">
+          <span class="logo__title">Festival Vallenato</span>
+          <span class="logo__city">Valledupar · Colombia</span>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav__link is-active">Inicio</a></li>
+          <li><a href="#vivencias" class="nav__link">Vivencias</a></li>
+          <li><a href="#aires" class="nav__link">Los 4 Aires</a></li>
+          <li><a href="#instrumentos" class="nav__link">Instrumentos</a></li>
+          <li><a href="#categorias" class="nav__link">Concursos</a></li>
+          <li><a href="#programacion" class="nav__link">Programación</a></li>
+          <li><a href="#escenarios" class="nav__link">Escenarios</a></li>
+          <li><a href="#galeria" class="nav__link">Galería</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="btn btn--gold nav__cta" id="loginBtn" aria-label="Iniciar Sesión">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span id="loginBtnText">Iniciar Sesión</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION LUMINOSA Y ELEGANTE -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg-decoration" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-icon">👑</span>
+            <span>Patrimonio Cultural Inmaterial de la Humanidad · UNESCO</span>
+          </div>
+
+          <h1 class="hero__title">
+            Valledupar en Abril: Donde el <em>Acordeón</em> se Vuelve Leyenda
+          </h1>
+
+          <p class="hero__sub">
+            De las mañanas bajo el centenario palo de mango en la Plaza Alfonso López a los baños helados en el Río Guatapurí y las parrandas de patio hasta el amanecer. Siente la fiesta más pura de Colombia: <strong>100% entrada libre al folclor de los juglares.</strong>
+          </p>
+
+          <!-- Cuenta Regresiva al Festival -->
+          <div class="countdown" id="countdown" aria-label="Cuenta regresiva para el festival">
+            <div class="countdown__head">
+              <span class="countdown__dot"></span>
+              <span>Gran Coronación de Reyes Vallenatos · Cuenta Regresiva Oficial</span>
+            </div>
+            <div class="countdown__grid">
+              <div class="countdown__box">
+                <span class="countdown__num" id="cdDays">18</span>
+                <span class="countdown__lbl">Días</span>
+              </div>
+              <div class="countdown__sep">:</div>
+              <div class="countdown__box">
+                <span class="countdown__num" id="cdHours">08</span>
+                <span class="countdown__lbl">Horas</span>
+              </div>
+              <div class="countdown__sep">:</div>
+              <div class="countdown__box">
+                <span class="countdown__num" id="cdMinutes">45</span>
+                <span class="countdown__lbl">Minutos</span>
+              </div>
+              <div class="countdown__sep">:</div>
+              <div class="countdown__box">
+                <span class="countdown__num" id="cdSeconds">20</span>
+                <span class="countdown__lbl">Segundos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#programacion" class="btn btn--gold btn--lg">
+              <span>Ver Programación</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#vivencias" class="btn btn--white-luxury btn--lg">
+              <span>Vivir el Festival</span>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat-card">
+              <span class="hero__stat-num">4</span>
+              <span class="hero__stat-label">Aires Tradicionales</span>
+            </div>
+            <div class="hero__stat-card">
+              <span class="hero__stat-num">5</span>
+              <span class="hero__stat-label">Coronas de Reyes</span>
+            </div>
+            <div class="hero__stat-card">
+              <span class="hero__stat-num">58°</span>
+              <span class="hero__stat-label">Años de Tradición</span>
+            </div>
+            <div class="hero__stat-card">
+              <span class="hero__stat-num">100%</span>
+              <span class="hero__stat-label">Entrada Libre</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__card-frame">
+            <div class="hero__image-wrap">
+              <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?auto=format&fit=crop&w=1000&q=85" alt="Maestro acordeonero tocando en el Festival Vallenato" class="hero__main-img" loading="eager">
+              <div class="hero__card-caption">
+                <span class="hero__card-pill">Plaza Alfonso López</span>
+                <p>Donde nacen las leyendas bajo el palo de mango</p>
+              </div>
+            </div>
+            <div class="hero__floating-card hero__floating-card--top">
+              <span class="floating-icon">🪗</span>
+              <div>
+                <strong>Rey Vallenato</strong>
+                <small>La corona sagrada del fuelle</small>
+              </div>
+            </div>
+            <div class="hero__floating-card hero__floating-card--bottom">
+              <span class="floating-icon">🌿</span>
+              <div>
+                <strong>Parranda & Tradición</strong>
+                <small>Bajo el Palo de Mango</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: LA VERDADERA VIVENCIA DEL FESTIVAL -->
+    <section class="section section--light-pearl" id="vivencias">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">La Esencia de Valledupar</p>
+          <h2>Lo que Realmente se Vive en el Festival</h2>
+          <p class="section__lead">
+            Más que un concurso, el Festival de la Leyenda Vallenata es un ritual que se respira en el calor de abril, entre las sombras de los mangos, el río helado y los patios parranderos.
+          </p>
+        </header>
+
+        <div class="vivencias-grid">
+          <!-- Vivencia 1: El Palo de Mango -->
+          <article class="vivencia-card">
+            <div class="vivencia-card__media">
+              <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?auto=format&fit=crop&w=800&q=80" alt="Maestro acordeonero en la Plaza Alfonso López durante el Festival Vallenato" loading="lazy">
+              <span class="vivencia-badge">La Cuna del Acordeón</span>
+            </div>
+            <div class="vivencia-card__body">
+              <span class="tag tag--gold">Plaza Alfonso López</span>
+              <h3 class="vivencia-card__title">El Mítico Palo de Mango</h3>
+              <p class="vivencia-card__desc">
+                A las 8:00 AM, bajo la sombra fresca del centenario palo de mango, se hace un silencio sagrado. Aquí compiten los acordeoneros frente a un pueblo que sabe de música: si un pito desafina o un bajo se pierde, el público lo nota al instante. Con un tinto caliente en la mano, se viven las batallas más puras del folclor.
+              </p>
+            </div>
+          </article>
+
+          <!-- Vivencia 2: El Río Guatapurí -->
+          <article class="vivencia-card">
+            <div class="vivencia-card__media">
+              <img src="https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?auto=format&fit=crop&w=800&q=80" alt="Bañistas refrescándose en las aguas heladas del Río Guatapurí en Valledupar" loading="lazy">
+              <span class="vivencia-badge">Rito Tradicional</span>
+            </div>
+            <div class="vivencia-card__body">
+              <span class="tag tag--sand">Balneario Hurtado</span>
+              <h3 class="vivencia-card__title">El Baño en el Río Guatapurí</h3>
+              <p class="vivencia-card__desc">
+                Cuando el sol aprieta a 34°C al mediodía, todo el mundo va al río que baja helado desde la Sierra Nevada de Santa Marta. Al lado de la Sirena dorada de Hurtado, la gente come sancocho de chivo en leña y se reúne en corrillos con guitarras y acordeones que nunca paran de sonar.
+              </p>
+            </div>
+          </article>
+
+          <!-- Vivencia 3: El Desfile de Piloneras -->
+          <article class="vivencia-card">
+            <div class="vivencia-card__media">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Desfile de danzantes folclóricos con trajes tradicionales coloridos en la apertura del Festival" loading="lazy">
+              <span class="vivencia-badge">Apertura del Pueblo</span>
+            </div>
+            <div class="vivencia-card__body">
+              <span class="tag tag--copper">Calles y Avenidas</span>
+              <h3 class="vivencia-card__title">El Desfile de Piloneras</h3>
+              <p class="vivencia-card__desc">
+                Más de 10.000 bailarines abren la fiesta bailando la danza tradicional de las molenderas del maíz. Las mujeres lucen llamativas polleras de cuadros con flores de bonche en el cabello, mientras los hombres con sombrero vueltiao y liqui-liqui blanco cantan al unísono: <em>«¿A quién se le canta aquí? ¿A quién se le da la gracia...?»</em>.
+              </p>
+            </div>
+          </article>
+
+          <!-- Vivencia 4: La Parranda de Patio -->
+          <article class="vivencia-card">
+            <div class="vivencia-card__media">
+              <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=80" alt="Parranda vallenata íntima con guitarra y compositores" loading="lazy">
+              <span class="vivencia-badge">El Alma Oculta</span>
+            </div>
+            <div class="vivencia-card__body">
+              <span class="tag tag--gold">Patios Tradicionales</span>
+              <h3 class="vivencia-card__title">La Sagrada Parranda de Patio</h3>
+              <p class="vivencia-card__desc">
+                En barrios tradicionales como Novalito y Cañahuate, las casas abren sus patios bajo árboles de totumo y mamón. Aquí no se baila ni hay amplificación comercial: se escucha con reverencia al compositor narrar la historia de su canción mientras el trago pasa de mano en mano hasta el amanecer.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA: LOS 4 AIRES SAGRADOS -->
+    <section class="section section--light-pearl" id="aires">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">La Esencia Musical</p>
+          <h2>Los Cuatro Aires del Vallenato</h2>
+          <p class="section__lead">Cada ritmo encierra una emoción única y una métrica insigne que todo aspirante a Rey Vallenato debe dominar a la perfección.</p>
+        </header>
+
+        <!-- Selector de Aires -->
+        <div class="aire-tabs" role="tablist" aria-label="Seleccionar aire vallenato">
+          <button class="aire-tab is-active" data-aire="paseo" role="tab" aria-selected="true">
+            <span class="aire-tab__icon">📜</span>
+            <span class="aire-tab__name">El Paseo</span>
+            <span class="aire-tab__tag">Narrativo y Clásico</span>
+          </button>
+          <button class="aire-tab" data-aire="merengue" role="tab" aria-selected="false">
+            <span class="aire-tab__icon">🌾</span>
+            <span class="aire-tab__name">El Merengue</span>
+            <span class="aire-tab__tag">Alegre y Campesino</span>
+          </button>
+          <button class="aire-tab" data-aire="puya" role="tab" aria-selected="false">
+            <span class="aire-tab__icon">⚡</span>
+            <span class="aire-tab__name">La Puya</span>
+            <span class="aire-tab__tag">Velocidad y Destreza</span>
+          </button>
+          <button class="aire-tab" data-aire="son" role="tab" aria-selected="false">
+            <span class="aire-tab__icon">🕊️</span>
+            <span class="aire-tab__name">El Son</span>
+            <span class="aire-tab__tag">Nostalgia y Sentimiento</span>
+          </button>
+        </div>
+
+        <!-- Visor dinámico del Aire Activo -->
+        <div class="aire-display" id="aireDisplay">
+          <div class="aire-display__card">
+            <div class="aire-display__info">
+              <div class="aire-display__meta">
+                <span class="tag tag--gold" id="aireMetric">Compás: 4/4 ó 2/4</span>
+                <span class="tag tag--sand" id="aireSpeed">Tempo Moderado (100 - 130 BPM)</span>
+              </div>
+              <h3 class="aire-display__title" id="aireTitle">El Paseo: La Voz del Juglar</h3>
+              <p class="aire-display__desc" id="aireDesc">
+                Es el aire más popular y difundido de la música vallenata. Su cadencia es ideal para narrar crónicas de amor, historias de la provincia, anécdotas y versos sentidos. Con él los viejos juglares llevaban las noticias de pueblo en pueblo a lomo de mula.
+              </p>
+              <div class="aire-display__highlight">
+                <strong>Obra Emblemática:</strong>
+                <span id="aireSong">"La Gota Fría" de Emiliano Zuleta Baquero / "La Casa en el Aire" de Rafael Escalona</span>
+              </div>
+
+              <!-- Simulador de Ritmo con Web Audio API -->
+              <div class="sound-player">
+                <div class="sound-player__controls">
+                  <button class="btn btn--gold btn--sm sound-player__btn" id="playAireSoundBtn" aria-label="Escuchar simulación rítmica">
+                    <span id="soundBtnIcon">▶</span> <span id="soundBtnText">Escuchar Muestra Rítmica</span>
+                  </button>
+                  <span class="sound-player__hint">Simulación en vivo de caja y fuelle (Web Audio)</span>
+                </div>
+                <div class="sound-waves" id="soundWaves" aria-hidden="true">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="aire-display__quote">
+              <blockquote>
+                <p id="aireQuote">"El paseo vallenato es como una carta escrita con las notas de un acordeón que jamás se olvida."</p>
+                <cite id="aireAuthor">— Tradición Oral de Valledupar</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: LA TRILOGÍA SAGRADA (INSTRUMENTOS) -->
+    <section class="section section--white" id="instrumentos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Mestizaje Cultural</p>
+          <h2>La Trilogía Sagrada del Folclor</h2>
+          <p class="section__lead">El vallenato es el punto de encuentro perfecto entre tres continentes: la melodía europea, el pulso africano y el suspiro indígena americano.</p>
+        </header>
+
+        <div class="instruments-grid">
+          <!-- Acordeón -->
+          <article class="instrument-card">
+            <div class="instrument-card__header">
+              <span class="instrument-card__badge">Aporte Europeo 🇪🇺</span>
+              <span class="instrument-card__icon">🪗</span>
+            </div>
+            <h3 class="instrument-card__name">El Acordeón Diatónico</h3>
+            <p class="instrument-card__sub">El fuelle que canta historias</p>
+            <p class="instrument-card__text">
+              Llegado por las costas del Caribe a mediados del siglo XIX, fue adoptado por los campesinos sabaneros y vallenatos. Sus botones de brillo y pitos traducen el llanto y la alegría del hombre caribeño.
+            </p>
+            <div class="instrument-card__footer">
+              <span class="pill">Hohner Corona II y III</span>
+              <span class="pill">Teclado de tres hileras</span>
+            </div>
+          </article>
+
+          <!-- Caja -->
+          <article class="instrument-card">
+            <div class="instrument-card__header">
+              <span class="instrument-card__badge">Aporte Africano 🌍</span>
+              <span class="instrument-card__icon">🥁</span>
+            </div>
+            <h3 class="instrument-card__name">La Caja Vallenata</h3>
+            <p class="instrument-card__sub">El latido y compás de la tierra</p>
+            <p class="instrument-card__text">
+              Pequeño tambor cónico fabricado con madera de caracolí o ceiba y un parche tensado de cuero de chivo. Sus golpes secos, fondeados y repiques marcan la cadencia irrepetible de cada aire vallenato.
+            </p>
+            <div class="instrument-card__footer">
+              <span class="pill">Parche de chivo curado</span>
+              <span class="pill">Madera de árbol nativo</span>
+            </div>
+          </article>
+
+          <!-- Guacharaca -->
+          <article class="instrument-card">
+            <div class="instrument-card__header">
+              <span class="instrument-card__badge">Aporte Indígena 🇨🇴</span>
+              <span class="instrument-card__icon">🎋</span>
+            </div>
+            <h3 class="instrument-card__name">La Guacharaca</h3>
+            <p class="instrument-card__sub">El trino de la selva Chimila</p>
+            <p class="instrument-card__text">
+              Instrumento de raspado idiófono creado por los indígenas Chimilas a partir del tallo de la cañabrava. Con su trinche de alambre o costilla, imita el canto del ave silvestre guacharaca.
+            </p>
+            <div class="instrument-card__footer">
+              <span class="pill">Tallo de cañabrava</span>
+              <span class="pill">Trinche de cinco púas</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOMENAJE A GABRIEL GARCÍA MÁRQUEZ -->
+    <section class="section section--quote" aria-label="Cita célebre sobre el vallenato">
+      <div class="container quote-container">
+        <div class="quote-symbol" aria-hidden="true">“</div>
+        <blockquote class="quote-text">
+          No sé qué tiene el vallenato que cuando lo oigo se me arruga el sentimiento... Cien años de soledad no es más que un vallenato de trescientas cincuenta páginas.
+        </blockquote>
+        <div class="quote-author">
+          <strong>Gabriel García Márquez</strong>
+          <span>Premio Nobel de Literatura & Gran Amante del Vallenato</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS Y EVENTOS DEL FESTIVAL -->
+    <section class="section section--light-pearl" id="categorias">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Competencias Oficiales</p>
+          <h2>Categorías del Festival</h2>
+          <p class="section__lead">Desde la corona de los grandes maestros hasta el ingenio rimado de la piqueria y el colorido baile de las piloneras.</p>
+        </header>
+
+        <div class="chips" id="catFilters" role="group" aria-label="Filtrar categorías">
+          <button class="chip is-active" data-filter="todas">Todas las Categorías</button>
+          <button class="chip" data-filter="concurso">Concursos de Reyes</button>
+          <button class="chip" data-filter="tradicion">Tradición & Folclor</button>
+          <button class="chip" data-filter="espectaculo">Espectáculos & Conciertos</button>
+        </div>
+
+        <div class="cards" id="catGrid">
+          <article class="card" data-cat="concurso">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?auto=format&fit=crop&w=800&q=80" alt="Acordeonero profesional compitiendo" loading="lazy">
+              <span class="card__crown">👑 Rey de Reyes</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--gold">Concurso Principal</span>
+              <h3 class="card__title">Acordeoneros Profesionales</h3>
+              <p class="card__desc">Los más virtuosos digitadores del acordeón se baten en duelo en la Plaza Alfonso López por la codiciada corona dorada.</p>
+              <div class="card__meta">
+                <span>📍 Plaza Alfonso López</span>
+                <span>⭐ Nivel Élite</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="concurso">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Compositor con guitarra afinando sus versos inéditos" loading="lazy">
+              <span class="card__crown">✍️ Poesía Sonora</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--gold">Concurso</span>
+              <h3 class="card__title">Canción Inédita</h3>
+              <p class="card__desc">Poetas y compositores estrenan letras sublimes nunca antes grabadas, compitiendo en paseo, merengue, puya o son.</p>
+              <div class="card__meta">
+                <span>📍 Teatro al Aire Libre</span>
+                <span>⭐ Lírica Pura</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="tradicion">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80" alt="Piqueros repentistas en tarima" loading="lazy">
+              <span class="card__crown">⚡ Duelo de Ingenio</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--sand">Tradición</span>
+              <h3 class="card__title">Piqueria y Versos Improvisados</h3>
+              <p class="card__desc">Combate poético cuerpo a cuerpo donde dos repentistas se lanzan cuartetas y décimas con mordacidad, métrica y rima al instante.</p>
+              <div class="card__meta">
+                <span>📍 Tarima Francisco el Hombre</span>
+                <span>⭐ Rima al Vuelo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="tradicion">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Desfile multitudinario de piloneras por las calles de Valledupar" loading="lazy">
+              <span class="card__crown">🌺 Danza Ancestral</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--sand">Tradición</span>
+              <h3 class="card__title">Desfile de Piloneras</h3>
+              <p class="card__desc">Miles de bailarines con polleras multicolores y sombreros de paja recorren Valledupar al son del canto del pilón y las tamboras.</p>
+              <div class="card__meta">
+                <span>📍 Avenidas de Valledupar</span>
+                <span>⭐ Apertura Oficial</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="espectaculo">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Noche estelar con artistas vallenatos en el Parque de la Leyenda" loading="lazy">
+              <span class="card__crown">🌟 Noches Estelares</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--copper">Espectáculo</span>
+              <h3 class="card__title">Conciertos y Noches de Gala</h3>
+              <p class="card__desc">El Parque de la Leyenda Vallenata 'Consuelo Araujonoguera' vibra con los ídolos del vallenato en tarimas abiertas a la comunidad.</p>
+              <div class="card__meta">
+                <span>📍 Parque de la Leyenda</span>
+                <span>⭐ Entrada Gratuita</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="concurso">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Jóvenes acordeoneros semilleros del folclor vallenato" loading="lazy">
+              <span class="card__crown">✨ Semillero de Oro</span>
+            </div>
+            <div class="card__body">
+              <span class="tag tag--gold">Concurso</span>
+              <h3 class="card__title">Acordeón Juvenil e Infantil</h3>
+              <p class="card__desc">Niños y jóvenes prodigio demuestran la continuidad eterna de la tradición interpretando los cuatro aires con maestría asombrosa.</p>
+              <div class="card__meta">
+                <span>📍 Centro Recreacional La Pedregosa</span>
+                <span>⭐ El Futuro del Folclor</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMACIÓN DESTACADA Y AGENDA -->
+    <section class="section section--white" id="programacion">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Agenda Oficial</p>
+          <h2>Programación de las 4 Noches</h2>
+          <p class="section__lead">Organiza tu visita al festival. Guarda tus eventos favoritos en tu agenda personal con la estrella ★.</p>
+        </header>
+
+        <!-- Selector de Días -->
+        <div class="tabs" id="dayTabs" role="tablist" aria-label="Días del festival"></div>
+
+        <!-- Filtros y Buscador de Eventos -->
+        <div class="agenda-controls">
+          <div class="agenda-search">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="eventSearchInput" placeholder="Buscar por concurso, artista o tarima..." aria-label="Buscar eventos">
+          </div>
+          <div class="chips chips--compact" id="typeFilters" role="group" aria-label="Filtrar eventos por tipo">
+            <button class="chip is-active" data-type="todos">Todos</button>
+            <button class="chip" data-type="rey">Rey Vallenato</button>
+            <button class="chip" data-type="final">Grandes Finales</button>
+            <button class="chip" data-type="concierto">Conciertos de Gala</button>
+          </div>
+        </div>
+
+        <!-- Lista de Eventos -->
+        <div class="events" id="eventList" aria-live="polite"></div>
+        <p class="aviso">* Programación oficial de libre acceso de la Fundación Festival de la Leyenda Vallenata (Valledupar).</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: ESCENARIOS DE ACCESO LIBRE (EL FESTIVAL ES GRATIS) -->
+    <section class="section section--light-pearl" id="escenarios">
+      <div class="container">
+        <header class="section__head">
+          <span class="badge-free-pill">Patrimonio del Pueblo · Entrada 100% Gratuita</span>
+          <h2>Escenarios de Acceso Libre</h2>
+          <p class="section__lead">El Festival de la Leyenda Vallenata es un regalo cultural para toda la humanidad. Disfruta de cada tarima, concurso y concierto sin costo alguno.</p>
+        </header>
+
+        <div class="venues-grid">
+          <!-- Plaza Alfonso López -->
+          <article class="venue-card">
+            <div class="venue-card__media">
+              <img src="https://images.unsplash.com/photo-1558584724-0e4d32ca55a4?auto=format&fit=crop&w=800&q=80" alt="Tarima de acordeoneros en la Plaza Alfonso López bajo el palo de mango" loading="lazy">
+              <span class="venue-badge">Cuna Histórica</span>
+            </div>
+            <div class="venue-card__body">
+              <div class="venue-card__meta">
+                <span class="tag tag--gold">Entrada Libre</span>
+                <span class="venue-capacity">Al aire libre</span>
+              </div>
+              <h3 class="venue-card__title">Plaza Alfonso López</h3>
+              <p class="venue-card__desc">Bajo el mítico palo de mango y en la Tarima 'Francisco el Hombre' se viven las eliminatorias de los mejores acordeoneros profesionales, piqueria y aficionados.</p>
+              <ul class="venue-card__features">
+                <li>📍 Centro Histórico de Valledupar</li>
+                <li>⏰ Acceso abierto desde las 8:00 AM</li>
+                <li>🎺 Concurso de Reyes y Duelos de Piqueria</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Parque de la Leyenda Vallenata -->
+          <article class="venue-card venue-card--featured">
+            <div class="venue-highlight-badge">★ ESCENARIO MONUMENTAL</div>
+            <div class="venue-card__media">
+              <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80" alt="Multitudes en el Parque de la Leyenda Vallenata en la Gran Noche de Coronación" loading="lazy">
+              <span class="venue-badge">Tarima 'Colacho Mendoza'</span>
+            </div>
+            <div class="venue-card__body">
+              <div class="venue-card__meta">
+                <span class="tag tag--gold">Entrada Gratuita</span>
+                <span class="venue-capacity">Capacidad: 25.000 personas</span>
+              </div>
+              <h3 class="venue-card__title">Parque de la Leyenda Vallenata</h3>
+              <p class="venue-card__desc">El templo sagrado donde se efectúan los espectáculos masivos, las noches de apertura y la Gran Noche de Coronación del nuevo Rey Vallenato.</p>
+              <ul class="venue-card__features">
+                <li>📍 Parque 'Consuelo Araujonoguera'</li>
+                <li>⏰ Ingreso por orden de llegada desde las 5:00 PM</li>
+                <li>👑 Coronación del Rey & Conciertos de Gala</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Ruta del Desfile de Piloneras -->
+          <article class="venue-card">
+            <div class="venue-card__media">
+              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80" alt="Desfile de piloneras con trajes típicos en las calles de Valledupar" loading="lazy">
+              <span class="venue-badge">Carnaval Popular</span>
+            </div>
+            <div class="venue-card__body">
+              <div class="venue-card__meta">
+                <span class="tag tag--sand">A Cielo Abierto</span>
+                <span class="venue-capacity">Todo público</span>
+              </div>
+              <h3 class="venue-card__title">Ruta del Desfile de Piloneras</h3>
+              <p class="venue-card__desc">Kilómetros de comparsas, polleras multicolores y tambores recorriendo las avenidas principales de la ciudad en la fiesta popular más alegre de Colombia.</p>
+              <ul class="venue-card__features">
+                <li>📍 Av. 19 hasta el Centro Histórico</li>
+                <li>⏰ Jueves inaugural desde las 2:00 PM</li>
+                <li>🌺 Baile tradicional, música y folclor en la calle</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Banner informativo de acceso libre -->
+        <div class="free-banner">
+          <div class="free-banner__icon">🎟️</div>
+          <div class="free-banner__content">
+            <h4>Recomendaciones para el Ingreso Libre</h4>
+            <p>El festival es de acceso libre y gratuito para toda la comunidad por orden de llegada hasta completar el aforo. Se recomienda llegar con antelación a las tarimas, vestir ropa fresca y cómoda, y vivir con orgullo la fiesta del folclor.</p>
+          </div>
+          <a href="#programacion" class="btn btn--gold">Consultar Horarios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA Y LA LEYENDA DE FRANCISCO EL HOMBRE -->
+    <section class="section section--white" id="historia">
+      <div class="container history-section">
+        <div class="history-content">
+          <p class="eyebrow">Orígenes y Mitos</p>
+          <h2>La Leyenda de Francisco el Hombre</h2>
+          <div class="history-text">
+            <p>
+              Cuenta la leyenda caribeña que una noche oscura, cabalgando de regreso a su pueblo, <strong>Francisco Moscote Guerra</strong> (Francisco el Hombre) tocaba su acordeón cuando escuchó en la distancia unas notas de una belleza y velocidad sobrenatural.
+            </p>
+            <p>
+              Al acercarse, descubrió que su rival no era otro que el mismísimo Diablo. Francisco, sin vacilar, entonó con destreza inigualable los acordes del Credo al revés y cantó en notas celestiales las verdades de Dios. El diablo huyó derrotado y desde entonces el acordeón quedó bendecido para cantar la historia de nuestro pueblo.
+            </p>
+            <p>
+              En 1968, <strong>Consuelo Araujonoguera</strong>, el maestro <strong>Rafael Escalona</strong> y el expresidente <strong>Alfonso López Michelsen</strong> crearon el Festival para coronar a los verdaderos Reyes y salvaguardar para siempre esta joya del patrimonio universal.
+            </p>
+          </div>
+          <div class="history-founders">
+            <div class="founder-card">
+              <strong>Consuelo Araujonoguera</strong>
+              <small>La 'Cacica' del Vallenato</small>
+            </div>
+            <div class="founder-card">
+              <strong>Rafael Escalona</strong>
+              <small>Gran Maestro Compositor</small>
+            </div>
+            <div class="founder-card">
+              <strong>Alfonso López M.</strong>
+              <small>Impulsor Institucional</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="history-card-visual">
+          <div class="history-img-box">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Instrumentos y folclor de Valledupar" loading="lazy">
+            <div class="history-badge-overlay">
+              <span class="gold-seal">★</span>
+              <p>Valledupar · Capital Mundial del Vallenato</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE MOMENTOS CON LIGHTBOX -->
+    <section class="section section--light-pearl" id="galeria">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Memorias Vivas</p>
+          <h2>Galería del Festival</h2>
+          <p class="section__lead">Imágenes que capturan la pasión, los acordeones al viento y el fervor de un pueblo que canta unido.</p>
+        </header>
+
+        <div class="gallery" id="galleryGrid">
+          <figure class="g g--tall" data-title="La Noche de Coronación" data-sub="El Parque de la Leyenda vibra con 25.000 almas">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Multitudes vibrando en la Gran Noche de Coronación del Rey Vallenato" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+          <figure class="g" data-title="El Maestro y su Acordeón" data-sub="Interpretando un son nostálgico bajo el palo de mango">
+            <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?auto=format&fit=crop&w=900&q=80" alt="Maestro acordeonero en escena durante el Festival Vallenato" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+          <figure class="g" data-title="Festival de Música en Vivo" data-sub="Acordeones y guitarras al compás del folclor">
+            <img src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?auto=format&fit=crop&w=900&q=80" alt="Músicos en tarima interpretando vallenato en festival folclórico" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+          <figure class="g g--wide" data-title="Desfile de Piloneras" data-sub="La apertura oficial del Festival — 10.000 danzantes">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80" alt="Gran desfile folclórico de piloneras inaugurando el festival" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+          <figure class="g" data-title="El Juglar y su Historia" data-sub="Cada nota es un verso de vida">
+            <img src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?auto=format&fit=crop&w=900&q=80" alt="Juglar vallenato compartiendo su música en el festival" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+          <figure class="g" data-title="Guitarras y Melodías" data-sub="Concurso de Canción Inédita — Poesía sonora">
+            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80" alt="Compositor con guitarra en el Concurso de Canción Inédita" loading="lazy">
+            <div class="g__overlay"><span class="g__zoom">🔍 Ver Foto</span></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="section section--white" id="faq">
+      <div class="container faq-container">
+        <header class="section__head">
+          <p class="eyebrow">Guía Práctica</p>
+          <h2>Preguntas Frecuentes</h2>
+          <p class="section__lead">Todo lo que necesitas saber para vivir el Festival de la Leyenda Vallenata al máximo.</p>
+        </header>
+
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Cuáles son las fechas exactas y cómo se viven los días de festival?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>El festival se celebra anualmente entre finales de abril y comienzos de mayo en Valledupar, Cesar. Las eliminatorias diurnas inician a las 8:30 AM bajo el palo de mango de la Plaza Alfonso López; al mediodía la gente se refresca en el Río Guatapurí, y a partir de las 6:00 PM inician las noches mágicas de conciertos y coronación en el Parque de la Leyenda Vallenata.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿El Festival de la Leyenda Vallenata es gratuito?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>¡Totalmente gratuito! El festival es patrimonio cultural inmaterial de la nación y de la humanidad. Todos los concursos de acordeoneros profesionales, aficionados, infantiles, piqueria, desfiles de piloneras y eventos en las plazas públicas y escenarios oficiales cuentan con entrada 100% libre para toda la comunidad por orden de llegada.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Qué es una verdadera parranda vallenata y cómo se vive?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>La parranda vallenata tradicional no es una discoteca ni una fiesta para bailar; es un ritual sagrado de patio campesino. Amigos y poetas se sientan en círculo bajo la sombra de un árbol de mango a escuchar en silencio al juglar tocar el acordeón o la guitarra. Antes de cada canción, el compositor cuenta la anécdota real de cómo nació la letra, mientras se comparte un trago de Old Parr y un sancocho de chivo en leña.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Qué gastronomía típica se disfruta en Valledupar durante esos días?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>La cocina del Cesar es legendaria: el sancocho vallenato de gallina criolla o trifásico, el chivo asado o guisado, la arepa limpia con queso costeño salado, el bollo limpio, las caribañolas y los famosos dulces caseros que preparan las matronas de la provincia (dulce de papaya verde, leche cortada, coco y corozo).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Qué vestimenta se recomienda para el calor de Valledupar?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>En abril, Valledupar vive un calor tropical de 32°C a 35°C bajo un sol radiante. La tradición manda vestir camisas de lino blanco o guayaberas frescas, vestidos sueltos de algodón, calzado muy cómodo para caminar las plazas y el infaltable Sombrero Vueltiao original de 19 o 21 vueltas para protegerse del sol caribeño.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Cómo llegar a Valledupar y conseguir hospedaje?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>Valledupar cuenta con el Aeropuerto Alfonso López Pumarejo (VUP) con vuelos directos diarios desde Bogotá, Medellín y Barranquilla. Debido a que la ciudad se llena de más de 150.000 turistas en la semana del festival, es imprescindible reservar hoteles o casas de hospedaje en barrios tradicionales con meses de anticipación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA ULTRA ELEGANTE EN FONDO BLANCO / MARFIL -->
+  <footer class="site-footer" id="contacto">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <!-- Columna de Marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <span class="logo__emblem">
+              <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
+                <rect x="6" y="10" width="12" height="44" rx="4" fill="currentColor"/>
+                <rect x="46" y="10" width="12" height="44" rx="4" fill="currentColor"/>
+                <path d="M18 14h4v36h-4zM24 16h3v32h-3zM29 18h3v28h-3zM34 18h3v28h-3zM39 16h3v32h-3zM44 14h2v36h-2z" fill="currentColor" opacity=".85"/>
+              </svg>
+            </span>
+            <span class="logo__text">
+              <span class="logo__title">Festival Vallenato</span>
+              <span class="logo__city">Valledupar · Colombia</span>
+            </span>
+          </a>
+          <p class="footer-about">
+            La fiesta del folclor más grande de Colombia. Preservando la herencia inmortal de los juglares, los cuatro aires ancestrales y el alma caribeña de Valledupar.
+          </p>
+          <div class="footer-patrons">
+            <span>Patrocinado por:</span>
+            <div class="patron-badges">
+              <span class="patron-pill">🏛️ MinCultura Colombia</span>
+              <span class="patron-pill">🌾 Gobernación del Cesar</span>
+              <span class="patron-pill">👑 Fundación Festival</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#aires">Los 4 Aires</a></li>
+            <li><a href="#instrumentos">Instrumentos</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#programacion">Programación Oficial</a></li>
+            <li><a href="#escenarios">Escenarios Gratuitos</a></li>
+            <li><a href="#galeria">Galería Fotográfica</a></li>
+          </ul>
+        </div>
+
+        <!-- Escenarios & Visita -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Escenarios & Visita</h4>
+          <ul class="footer-links">
+            <li><a href="#escenarios">Plaza Alfonso López (Gratis)</a></li>
+            <li><a href="#escenarios">Parque de la Leyenda (Libre)</a></li>
+            <li><a href="#escenarios">Ruta de Piloneras</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#programacion">Horarios y Rondas</a></li>
+          </ul>
+          <div class="footer-social-wrap">
+            <h5 class="social-title">Redes Sociales</h5>
+            <ul class="social-pills">
+              <li><a href="#" aria-label="Instagram">Instagram</a></li>
+              <li><a href="#" aria-label="Facebook">Facebook</a></li>
+              <li><a href="#" aria-label="YouTube">YouTube</a></li>
+              <li><a href="#" aria-label="Twitter / X">X</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Boletín Informativo -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Boletín Oficial</h4>
+          <p class="footer-newsletter__desc">
+            Recibe en tu correo primicias de los artistas invitados, horarios de eliminatorias y novedades oficiales del festival.
+          </p>
+          <form class="newsletter-form" id="newsletter" novalidate>
+            <div class="newsletter-field">
+              <label for="email" class="sr-only">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" maxlength="120" autocomplete="email" required>
+              <button type="submit" class="btn btn--gold">Suscribirme</button>
+            </div>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
+          <small class="newsletter-privacy">🔒 Cuidamos tus datos. Cero spam, solo folclor.</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span id="year">2026</span> Festival de la Leyenda Vallenata. Todos los derechos reservados. Valledupar, Cesar, Colombia.
+        </p>
+        <p class="footer-unesco">
+          Reconocido por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: LIGHTBOX PARA LA GALERÍA -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Visor de imagen" hidden>
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visor">✕</button>
+      <div class="lightbox-body">
+        <img src="" alt="" id="lightboxImg" class="lightbox-img">
+        <div class="lightbox-caption">
+          <h4 id="lightboxTitle">Título</h4>
+          <p id="lightboxSub">Descripción</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: INICIAR SESIÓN -->
+  <div class="login-modal" id="loginModal" role="dialog" aria-modal="true" aria-label="Iniciar Sesión" hidden>
+    <div class="login-overlay" id="loginOverlay"></div>
+    <div class="login-dialog">
+      <div class="login-dialog__header">
+        <div>
+          <span class="login-badge">Acceso al Folclor</span>
+          <h3 class="login-title">Iniciar Sesión</h3>
+        </div>
+        <button class="login-close" id="loginClose" aria-label="Cerrar ventana">✕</button>
+      </div>
+      <p class="login-dialog__subtitle">Ingresa a tu cuenta oficial para seguir el Festival de la Leyenda Vallenata.</p>
+      
+      <form class="login-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Correo electrónico o usuario</label>
+          <input type="email" id="loginEmail" placeholder="ejemplo@correo.com" required autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+          <div class="form-group-label-row">
+            <label for="loginPassword">Contraseña</label>
+            <a href="#" class="login-forgot-link" id="forgotPassBtn">¿Olvidaste tu contraseña?</a>
+          </div>
+          <div class="password-input-wrap">
+            <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password">
+            <button type="button" class="toggle-password-btn" id="togglePasswordBtn" aria-label="Mostrar contraseña">👁</button>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="rememberMe" checked>
+          <label for="rememberMe">Mantener mi sesión iniciada</label>
+        </div>
+
+        <button type="submit" class="btn btn--gold btn--block login-submit-btn">Entrar a mi Cuenta</button>
+        <p class="login-msg" id="loginMsg" role="status"></p>
+
+        <div class="login-divider">
+          <span>O</span>
+        </div>
+
+        <button type="button" class="btn btn--white-luxury btn--block social-login-btn" id="googleLoginBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.8s.2-2.1.4-2.8L1.9 6.3C.7 8.7 0 10.3 0 12s.7 3.3 1.9 5.7l3.7-2.9z"/><path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16C3.7 19.7 7.5 23 12 23z"/></svg>
+          Continuar con Google
+        </button>
+
+        <p class="login-register-prompt">
+          ¿Aún no tienes cuenta? <a href="#" id="registerLink">Regístrate gratis</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+</body>
+</html>
